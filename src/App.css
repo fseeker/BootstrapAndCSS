@@ -1,0 +1,88 @@
+.App.App1 {
+  color: rgba(255, 0, 0, 1);
+}
+
+[active~='tw'] {
+  background-color: black;
+}
+
+.App div {
+  margin: 10px;
+  border: 2px solid blue;
+}
+
+div.App .c2{
+  background-color: aquamarine !important;
+}
+
+div.App .c2{
+  background-color: crimson;
+}
+
+.c1 ~ .c1{
+  background-color: lightblue;
+}
+
+.c3:hover {
+  background-color: salmon;
+  font-size: 1.1em;
+}
+
+a:visited {
+  color:chocolate;
+}
+
+a {
+  font-size: 1.2em;
+  font-weight: 700;
+  color:chartreuse;
+}
+
+
+a:hover {
+  color: salmon;
+}
+
+.c1::before {
+  content: 'Hi';
+}
+
+input[type=text]:focus {
+  border: 5px solid red !important;
+}
+
+.c1:nth-child(2n+1) {
+  border-style: dashed !important;
+}
+/*
+.c1:nth-child(2) {
+  border-style: dashed !important;
+}
+*/
+
+.list {
+  margin-left: 15px;
+}
+
+.list div::before {
+  content: '• ';
+}
+
+@media print {
+  input {
+    display: none;
+  }
+}
+
+.menu {
+  background-color: rgb(136, 196, 248);  
+  height: 100vh;
+}
+
+.body {
+  height: 100vh;
+}
+
+.full-height {
+  height: 100vh;
+}
